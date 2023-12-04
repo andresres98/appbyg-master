@@ -1,0 +1,229 @@
+/*Navbar*/
+#header .navbar {
+  padding: 0;
+  justify-content: space-between;
+  background: #aeebf2 !important;
+}
+/*tamaño logo*/
+#header .navbar-brand img {
+  max-height: 60px; /* Ajusta el valor según sea necesario */
+  margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+}
+#header .navbar-brand {
+  color: #59352d;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: auto;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.6;
+}
+#header .navbar-collapse {
+  flex-grow: 0;
+}
+#header .navbar-collapse .navbar-nav {
+  display: flex;
+  /*align-items: center;*/
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: auto;
+}
+#header .navbar-collapse .nav-item{
+margin-right: 15px;;
+}
+#header .navbar-collapse a:last-child {
+  padding-right: 0;
+}
+#header .navbar-collapse a {
+  color: #4d4d4d;
+  position: relative;
+}
+
+#header .navbar-collapse a:hover,
+#header .navbar-collapse a.active {
+  background: none;
+  color: #59352d;
+}
+
+#header .navbar-collapse a:hover:before,
+#header .navbar-collapse a.active:before {
+  right: 7px;
+  left: 8px;
+  opacity: 1;
+}
+
+#header .navbar-collapse a:before {
+  content: "";
+  background: #59352d;
+  height: 1px;
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
+  right: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  opacity: 0;
+}
+/*carrusel*/
+/*.custom-carousel img {
+  height: 30%; 
+  width: auto;
+  margin: auto; 
+}*/
+.custom-carousel .carousel-inner {
+  max-height: 400px; /* Ajusta la altura según tus necesidades */
+}
+/*Catalogo-cards en el inicio de la pagina*/
+.card-container {
+  display: flex;
+  justify-content: space-between; /* distribuye las tarjetas uniformemente en el contenedor */
+  padding: 20px; /* Añade un espacio alrededor del contenedor si lo necesitas */
+}
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin-right: 10px; /* Agrega un margen entre las tarjetas */
+  border: 2px solid #59352d;
+  background-color: #fae9f0;
+  padding: 20px;
+}
+.custom-card img{
+  width: 50%;
+  height: auto;
+}
+.btn-primary {
+  background: #59352d !important;
+  color: #ffffff;
+  border: 2px solid #59352d;
+  margin-bottom: 10px;
+}
+.btn-primary:hover {
+  border-color: #ffffff; /* Cambia el color del borde al pasar el mouse */
+}
+/*Pages-Brownie-Galletas-miniCakes*/
+.catalogbrownies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*margin: 20px;*/
+}
+.card {
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 18rem;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-link {
+  background-color: #e9afc9;
+  color: #59352d; /* Cambiar el color del texto si es necesario */
+  border: 2px solid #59352d;
+  padding: 5px 10px;
+  margin-top: auto; /* Mover el botón hacia la parte inferior de la tarjeta */
+  text-decoration: none;
+  /*transition: border-color 0.3s, color 0.3s;*/
+} 
+.btn-link:hover{
+  background-color: #e9afc9;
+  color: #ffffff;
+  border-color: #59352d;
+  /*color: white;*/
+ 
+}
+
+/*@media (max-width: 768px) {
+  .catalogbrownies {
+    flex-direction: column;
+    align-items: center;
+  }
+}*/
+/*login*/
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+  text-align: center;
+}
+.Auth-form-content img{
+  width: 25%;
+}
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: #59352d;
+  font-weight: 800;
+}
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+/*footer*/
+.footer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #e9afc9 !important;
+  padding: 1rem 0;
+}
+.socialList{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  /*flex-direction: column;*/
+}
+.socialList li{
+  margin-right: 1rem;
+}
+.socialList li :last-child{
+  margin-right:0;
+}
+
+.socialList li a{
+  color: #59352d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  
+}
+.socialList li a:hover{
+  text-decoration: underline;
+}
+.socialList li span {
+  margin-top: 0.2rem;
+}
+.copyright{
+  color: #59352d;
+}
+.logo{
+  display: block;
+  margin: 0 auto;
+  max-height: 60px;
+}
+
+
